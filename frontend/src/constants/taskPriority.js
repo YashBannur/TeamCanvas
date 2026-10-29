@@ -1,0 +1,13 @@
+export const TASK_PRIORITIES = {
+  LOW: 'LOW',
+  MEDIUM: 'MEDIUM',
+  HIGH: 'HIGH',
+  URGENT: 'URGENT'
+};
+
+export const TASK_PRIORITY_LABELS = {
+  [TASK_PRIORITIES.LOW]: 'Low',
+  [TASK_PRIORITIES.MEDIUM]: 'Medium',
+  [TASK_PRIORITIES.HIGH]: 'High',
+  [TASK_PRIORITIES.URGENT]: 'Urgent'
+};

@@ -1,0 +1,70 @@
+/* Extra styles for the connected login/register forms: server errors, field errors, loading state. */
+
+.auth-alert,
+.auth-notice {
+  margin: 0 0 18px;
+  padding: 11px 14px;
+  border-radius: 10px;
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+
+.auth-alert {
+  border: 1px solid #ffd0d8;
+  background: #fff1f3;
+  color: #b4233f;
+}
+
+.auth-notice {
+  border: 1px solid #c9ecd8;
+  background: #effbf4;
+  color: #1f7a48;
+}
+
+.auth-input-wrap.has-error {
+  border-color: #e5536b;
+}
+
+.auth-input-wrap.has-error:focus-within {
+  border-color: #e5536b;
+  box-shadow: 0 0 0 3px rgb(229 83 107 / 14%);
+}
+
+/* The message sits directly under its input (the input wrapper has a bottom margin, so pull it up). */
+.auth-field-error {
+  margin: -14px 0 18px;
+  color: #b4233f;
+  font-size: 12.5px;
+}
+
+.auth-register-card .auth-field-error {
+  margin: -10px 0 16px;
+}
+
+.auth-submit:disabled,
+.auth-submit:disabled:hover {
+  opacity: 0.75;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.auth-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgb(255 255 255 / 45%);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: auth-spin 0.7s linear infinite;
+}
+
+@keyframes auth-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .auth-spinner {
+    animation-duration: 2s;
+  }
+}

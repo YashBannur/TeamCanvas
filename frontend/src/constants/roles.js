@@ -1,0 +1,11 @@
+export const WORKSPACE_ROLES = {
+  OWNER: 'OWNER',
+  ADMIN: 'ADMIN',
+  MEMBER: 'MEMBER'
+};
+
+export const ROLE_LABELS = {
+  [WORKSPACE_ROLES.OWNER]: 'Owner',
+  [WORKSPACE_ROLES.ADMIN]: 'Admin',
+  [WORKSPACE_ROLES.MEMBER]: 'Member'
+};

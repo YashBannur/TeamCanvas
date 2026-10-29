@@ -1,0 +1,149 @@
+.task-modal-tabs {
+  display: flex;
+  gap: 6px;
+  margin: -4px 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.task-modal-tab {
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: transparent;
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.task-modal-tab:hover {
+  background: #f1f5f9;
+  color: var(--text-color);
+}
+
+.task-modal-tab[aria-selected='true'] {
+  background: #ede9fe;
+  color: var(--primary-color);
+}
+
+.task-comments {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.task-comments__loading,
+.task-comments__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-comment {
+  padding: 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.task-comment__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.task-comment__author {
+  display: block;
+  color: var(--text-color);
+  font-size: 0.875rem;
+}
+
+.task-comment__date {
+  display: block;
+  margin-top: 3px;
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+}
+
+.task-comment__actions {
+  display: flex;
+  gap: 2px;
+}
+
+.task-comment__delete {
+  color: #dc2626;
+}
+
+.task-comment__content {
+  margin: 12px 0 0;
+  color: var(--text-color);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.task-comment__edit {
+  margin-top: 12px;
+}
+
+.task-comment__edit textarea,
+.task-comments__composer textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.task-comment__edit textarea:focus,
+.task-comments__composer textarea:focus {
+  outline: 2px solid rgba(98, 88, 232, 0.2);
+  border-color: var(--primary-color);
+}
+
+.task-comment__edit-actions,
+.task-comments__composer-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.task-comment__edit-actions span,
+.task-comments__composer-footer span {
+  margin-right: auto;
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+}
+
+.task-comments__composer {
+  padding-top: 14px;
+  border-top: 1px solid var(--border-color);
+}
+
+.task-comments__composer label {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--text-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.task-comments__archived-note {
+  margin: 0 0 10px;
+  color: #92400e;
+  font-size: 0.82rem;
+}
+
+.task-comment--focused {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+}

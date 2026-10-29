@@ -1,0 +1,9 @@
+export const PROJECT_STATUS = {
+  ACTIVE: 'ACTIVE',
+  ARCHIVED: 'ARCHIVED'
+};
+
+export const PROJECT_STATUS_LABELS = {
+  [PROJECT_STATUS.ACTIVE]: 'Active',
+  [PROJECT_STATUS.ARCHIVED]: 'Archived'
+};
